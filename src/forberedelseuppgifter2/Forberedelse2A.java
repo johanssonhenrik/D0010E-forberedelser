@@ -18,7 +18,7 @@ public class Forberedelse2A {
 			return 0;
 		}else{
 			System.out.println(k);
-			//kvadratRekursiv(k); + k + k + 1
+			kvadratRekursiv(k); + k + k + 1
 			k -= 1;
 			return k;
 		}
