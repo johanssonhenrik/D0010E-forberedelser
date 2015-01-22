@@ -4,7 +4,7 @@ public class Forberedelse2C {
 
 	public static void main(String[] args) {
 		
-		int n = 11;
+		int n = 6912;
 
 		if(isPrime(n)){
 			System.out.println(n + " is a Prime Number! Hooray!");
@@ -15,14 +15,15 @@ public class Forberedelse2C {
 	public static boolean isPrime(int n){
 
 		int i;
-		int x = n;
 		
-		for(i=n; i>1; i--){
-			if(x%i!=0 && isPrime(n-1)){
-				System.out.println(n);
-				return true;
+		for(i=n-1; i>=2; i--){
+			if(n%i==0){
+				System.out.println("");
+				System.out.println("Since "+n+"/"+i+" = "+n/i+" we can conclude that");
+				return false;
 			}
+			//System.out.println(i);
 		}//for end-bracket
-		return false;
+		return true;
 	}
-}
+}//Henrik Johansson ehioja-0 2015-January-22
