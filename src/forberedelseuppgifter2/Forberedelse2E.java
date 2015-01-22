@@ -3,13 +3,12 @@ package forberedelseuppgifter2;
 public class Forberedelse2E {
 
 	public static void main(String[] args) {
-		System.out.println(change(9458));
+		System.out.println(change(127));
 	}
 	public static String change(int n){
 		
-		int tens = 0;
-		int fives = 0;
-		int ones = 0;
+		int tens, fives, ones;
+		tens = fives = ones = 0;
 		
 		tens = tens + n/10;
 		fives = (n%10)/5;

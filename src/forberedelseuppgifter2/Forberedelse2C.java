@@ -3,7 +3,8 @@ package forberedelseuppgifter2;
 public class Forberedelse2C {
 
 	public static void main(String[] args) {
-		int n = 10;
+		
+		int n = 11;
 
 		if(isPrime(n)){
 			System.out.println(n + " is a Prime Number! Hooray!");
@@ -12,19 +13,14 @@ public class Forberedelse2C {
 	}
 	
 	public static boolean isPrime(int n){
+
+		int i;
 		
-		for(int i=2; i<n; i++){
-			System.out.println(i);
-			if((n/i)%10!=0){
-				return false;
-			}else{
-				System.out.println("hej");
+		for(i=n+1; i>1; i--){
+			if(isPrime(n-1)){
+				return true;
 			}
-			
+		}
 		return false;
-			
-		}//for
-	
-		return true;
 	}
 }
