@@ -15,12 +15,14 @@ public class Forberedelse2C {
 	public static boolean isPrime(int n){
 
 		int i;
+		int x = n;
 		
-		for(i=n+1; i>1; i--){
-			if(isPrime(n-1)){
+		for(i=n; i>1; i--){
+			if(x%i!=0 && isPrime(n-1)){
+				System.out.println(n);
 				return true;
 			}
-		}
+		}//for end-bracket
 		return false;
 	}
 }
