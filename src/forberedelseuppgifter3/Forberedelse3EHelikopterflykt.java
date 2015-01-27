@@ -9,6 +9,6 @@ public class Forberedelse3EHelikopterflykt {
 		
 		helikopter.flyTo(30, 30);
 		polishelikopter.flyTo(-30,-30);
-		Helicopter.separation(helikopter,polishelikopter);
+		//Helicopter.separation(helikopter,polishelikopter);
 	}
 }
