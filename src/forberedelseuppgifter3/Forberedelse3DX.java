@@ -4,7 +4,7 @@ public class Forberedelse3DX {
 
 	public int max(){
 		
-		int agent;
+		//int agent;
 		
 		return 0;
 	}
